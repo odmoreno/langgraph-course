@@ -1,6 +1,4 @@
-/.venv
-/.vscode
-/.env
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -223,3 +221,8 @@ __marimo__/
 /*/*/__pycache__
 /graph/chains/__pycache__
 /graph/__pycache__
+/.pytest_cache
+/.venv
+/.vscode
+/.env
+/.chroma
