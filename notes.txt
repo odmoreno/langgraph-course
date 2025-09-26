@@ -69,3 +69,18 @@ graph TD;
         classDef default fill:#f2f0ff,line-height:1.2
         classDef first fill-opacity:0
         classDef last fill:#bfb6fc
+
+
+Ejecutar tests:
+
+ pytest . -s -v
+
+ -s
+Permite ver directamente la salida estándar (stdout y stderr) en la consola.
+  Con -s, por ejemplo, si tienes print() dentro de los tests, se mostrará en tiempo real.
+
+-v (verbose)
+Modo detallado: pytest mostrará más información:
+  Los nombres completos de cada test que corre.
+  No solo puntos (.), sino cada test con su ruta/nombre.
+  Muy útil para depurar y saber qué test exactamente falló.
