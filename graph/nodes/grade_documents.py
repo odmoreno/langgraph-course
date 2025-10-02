@@ -1,3 +1,7 @@
+"""
+Segunda Fase
+"""
+
 from typing import Any, Dict
 
 from graph.chains.retrieval_grader import retrieval_grader

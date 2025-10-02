@@ -7,7 +7,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 load_dotenv()
 
-embedd = False  # Try to not index multiple times is you alredy have the db chroma
+embedd = True  # Try to not index multiple times is you alredy have the db chroma
 
 urls = [
     "https://lilianweng.github.io/posts/2023-06-23-agent/",

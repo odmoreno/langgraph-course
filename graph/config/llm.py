@@ -1,18 +1,15 @@
+# graph/config/llm.py
 import os
 from dotenv import load_dotenv
-from graph.graph import app
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 load_dotenv()
-
 
 api_key = os.getenv("GOOGLE_API_KEY")
 if not api_key:
     raise RuntimeError("Falta GOOGLE_API_KEY. Agrégala al .env o al entorno.")
 
-def main():
-    print("Hello Advanced RAG")
-    print(app.invoke(input={"question": "what is agent memory?"}))
-
-
-if __name__ == "__main__":
-    main()
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.5-flash",
+    temperature=0
+)

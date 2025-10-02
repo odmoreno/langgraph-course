@@ -84,3 +84,6 @@ Modo detallado: pytest mostrará más información:
   Los nombres completos de cada test que corre.
   No solo puntos (.), sino cada test con su ruta/nombre.
   Muy útil para depurar y saber qué test exactamente falló.
+
+  Test individual:
+    pytest -s -vv graph/chains/tests/test_chains.py::test_generation_chain
