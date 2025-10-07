@@ -1,10 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 from langchain_core.runnables import RunnableSequence
-from langchain_openai import ChatOpenAI
-
-llm = ChatOpenAI(temperature=0)
-
+from graph.config.llm import llm
 
 class GradeHallucinations(BaseModel):
     """Binary score for hallucination present in generation answer."""
